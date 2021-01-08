@@ -6,6 +6,42 @@
 html{
 	font-family: Arial, Helvetica, sans-serif;
 }
+/* Common Class */
+.text-center {
+	text-align: center !important;
+}
+.row {
+
+}
+.col {
+	float: left;
+}
+.row::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.col-full{
+	width: 100%;
+}
+.col-2{
+	width: 50%;
+}
+.col-3{
+	width: 33.33333%;
+}
+.member-clear{
+	clear: both;
+}
+.btn{
+	background-color: #000;
+	color: #fff;
+}
+.btn:hover{
+	background-color: #ccc;
+	color: #000;
+}
+/* Common Class */
 #main{
 	/* height: 5000px; */
 }
@@ -82,7 +118,6 @@ html{
 }
 
 #slider .text-slider {
-	text-align: center;
 	width: 100%;
 	bottom: 47px;
 	left: 0;
@@ -108,13 +143,11 @@ html{
 	
 }
 #content .header-common{
-	text-align: center;
 	font-size: 30px;
 	font-weight: 500;
 	letter-spacing: 4px;
 }
 #content .sub-header-common{
-	text-align: center;
 	font-style: italic;
 	font-size: 15px;
 	margin-top: 25px;
@@ -127,32 +160,23 @@ html{
 }
 #content .member-list {
 	margin-top: 62px;
-	text-align: center;
 }
-#content .member-item {
-	float: left;
-	width: 33.33333%;
-}
+
 #content .member-name {
 	margin-bottom: 15px;
 }
-#content .member-list .member-clear{
-	clear: both;
-}
+
 #content .member-img {
 	border-radius: 4px;
 	width: 154px;
 }
 .tour {
-
 	background-color: #000;
 }
 .tour .tour-list {
 	background-color: #fff;
 	width: 766px;
-	margin-top: 40px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 40px auto 0 auto;
 	font-size: 15px;
 	color: #757575;
 
@@ -182,6 +206,117 @@ html{
 	padding: 2px 8px;
 	margin-right: 16px;
 }
-#footer{
+.tour .place-list {
+	width: 784px;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.place-item{
+	float: left;
+	width: 33.33333%;
+	padding: 0 8px;
+}
+.place-item .place-img {
+	width: 100%;
+	display: block;
 	
+	
+}
+.place-item .place-img:hover{
+	opacity: 60%;
+}
+.place-item .place-content{
+	background-color: #fff;
+	font-size: 15px;
+	padding: 16px 16px 24px;
+}
+.place-header{
+	font-weight: 500;
+	font-size: 14px !important;
+}
+.place-sub-header{
+	margin: 15px 0;
+	opacity: 0.8;
+}
+.place-content-intro{
+	margin-bottom: 15px;
+	line-height: 1.4;
+}
+
+.btn-place{
+	
+	padding: 8px 16px;
+	text-decoration: none;
+}
+
+.contact-item {
+	width: 768px;
+	margin: 47px auto 0 auto;
+	line-height: 1.6;
+	font-weight: 500;
+	
+}
+.contact-infor{
+	font-size: 18px;
+}
+.contact-item p i{
+	/* font-size: 18; */
+	width: 30px;
+	display: inline-block;
+}
+.text-input {
+	width: 100%;
+	padding: 10px 8px;
+	border: 1px solid #ccc ;
+	font-size: 16px;
+}
+.message-input {
+	margin-top: 8px;
+}
+.btn-submit{
+	font-size: 16px;
+	margin-top: 16px;
+	padding: 10px 19px;
+	border: none;
+	float: right;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.name-mail-input {
+	padding: 0px 8px;
+	margin-right: 8px;
+	margin-left: -8px;
+}
+.map-img img{
+	width: 100%;
+	display: block;
+}
+#footer {
+	padding: 64px 16px;
+	text-align: center;
+	color: rgba(0,0, 0, 0.6);
+	
+
+}
+
+.copy-right a{
+	color: rgba(0,0, 0, 0.6);
+}
+.list-internet a{
+	text-decoration: none;
+	color: rgba(0,0, 0, 0.6);
+	cursor: default;
+
+}
+.copy-right a:hover,
+.list-internet a:hover{
+	opacity: 0.6;
+}
+.list-internet {
+	font-size: 24px;
+}
+.copy-right {
+	font-size: 15px;
 }
