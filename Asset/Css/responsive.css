@@ -1,0 +1,60 @@
+@media (max-width : 600px) {
+    #header {
+        overflow: hidden;
+    }
+    #header .btn-search {
+        display: none;
+    }
+    #header .btn-menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    #nav >li {
+        display: block;
+    }
+    #nav >li:first-child{
+        display: inline-block;
+    }
+    #slider .text-slider{
+        display: none;
+    }
+    #nav , .subnav{
+        display: block;
+        
+    }
+    #nav .subnav {
+        position: initial;
+    }
+    #nav .subnav a {
+        width: 100%;
+        background-color: #ccc;
+        padding: 0 40px;
+    }
+    #nav .subnav li:hover a{
+        background-color: #fff;
+    }
+    .member-item{
+        width: 100%;
+        padding-top: 30px;
+    }
+    #content .member-img {
+        width: 60%;
+    }
+    .place-item {
+        width: 100%;
+        padding-top: 16px;
+    }
+    .s-col-full {
+        width: 100%;
+    }
+    .name-mail-input{
+        padding: 0;
+        margin : 16px 0 8px;
+    }
+    .btn-submit{
+        width: 100%;
+        text-align: center;
+    }
+}

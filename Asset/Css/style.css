@@ -55,6 +55,10 @@ html{
 	left: 0;
 	z-index: 1;
 }
+.btn-menu{
+	display: none;
+}
+#header .btn-menu,
 #header .btn-search {
 	float: right;
 	color: white;
@@ -64,6 +68,10 @@ html{
 #header .btn-search:hover{
 	background-color: #f44336;
 	cursor: pointer;
+}
+#header .btn-menu:hover{
+	background-color: #ccc;
+	color: #000;
 }
 #nav , .subnav{
 	list-style: none;
@@ -137,10 +145,13 @@ html{
 #content .common {
 
 	width: 800px;
+	max-width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 74px;
 	padding-bottom: 96px;
+	padding-left: 16px;
+	padding-right: 16px;
 	
 }
 #content .header-common{
@@ -170,6 +181,8 @@ html{
 #content .member-img {
 	border-radius: 4px;
 	width: 154px;
+	max-width: 100%;
+	
 }
 .tour {
 	background-color: #000;
@@ -177,6 +190,7 @@ html{
 .tour .tour-list {
 	background-color: #fff;
 	width: 766px;
+	width: 100%;
 	margin: 40px auto 0 auto;
 	font-size: 15px;
 	color: #757575;
@@ -208,10 +222,9 @@ html{
 	margin-right: 16px;
 }
 .tour .place-list {
-	width: 784px;
 	margin-top: 40px;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: -8px;
+	margin-right: -8px;
 }
 .place-item{
 	float: left;
@@ -253,6 +266,7 @@ html{
 
 .contact-item {
 	width: 768px;
+	width: 100%;
 	margin: 47px auto 0 auto;
 	line-height: 1.6;
 	font-weight: 500;
